@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title> Meet Up </title>
+    <style>
+        body {background-color: pink;}
+        h1   {color: purple;}      
+    </style>
+</head>
+<body>
+	<div id="logo" align="center">
+           <img src="masaža.jpg" border="0">
+            <img src="wellness1.jpg" border="0">
+            <img src="sauna.jpg" border="0">
+        </div>
+    <div id="main_title" align="center">
+    	<h1><font color="purple">Wellness</font></h1>
+    </div>
+    <div class="page_text" align="center">
+        <h1>Doživite najbolji wellness i uživajte!!</h1>
+    </div>
+    <form action="" method="post">
+    <div  class="fieldset_main" align="center">
+        <fieldset>
+    		<legend><font color="black"><b>Informacije za prijavu</b></font></legend>
+    	<table>
+        	<tr>
+            	<td>Email:</td>
+                <td><input type="email" name="email_address" required></td>
+            </tr>
+            <tr>
+            	<td>Korisničko ime:</td>
+                <td><input type="text" name="username" required></td>
+            </tr>
+            <tr>
+            	<td>Korisnička lozinka:</td>
+                <td><input type="password" name="user_pass" required></td>
+            </tr> 
+           
+		</table>
+        </fieldset>
+        </div>
+        <div class="fieldset_table">
+        <fieldset>
+    		<legend><font color="black"><b>Osobne informacije</b></font></legend>
+                <table>
+          <tr>
+            	<td>Ime:</td>
+                <td><input type="text" name="firstname" required></td>
+          <br><td rowspan="6">
+                    <img src="bazen.jpg" width="450px">
+                </td>
+            <tr>
+            	<td>Prezime:</td>
+                <td><input type="text" name="lastname" required></td>
+            </tr>
+            <tr>
+            	<td>Datum rođenja:</td>
+                <td><input type="date" name="dob" required></td>
+            </tr>
+            <tr>
+            	<td>Mjesto stanovanja:</td>
+                <td><input type="text" name="cur_address" required></td>
+            </tr>
+            <tr>
+            	<td>Spol:</td>
+                <td><input type="radio" name="gender" value="male" checked>Muški
+                <input type="radio" name="gender" value="female">Ženski
+                </td>
+            </tr>
+            <tr>
+            	<td>Hobij:</td>
+                <td>
+                	
+                	<select name="hobby">
+                    	<option value="first_choice">--odaberite--</option>
+  			<option value="gaming">Gaming</option>
+  			<option value="sports">Sportovi</option>
+  			<option value="cooking">Kuhanje</option>
+  			<option value="drawing">Crtanje</option>
+                        <option value="volonteer">Volontiranje</option>
+                        <option value="other_hobby">Ostalo</option>
+			</select>
+                </td>
+           
+            </tr>
+            
+        </table>
+        </fieldset>
+        </div>
+        <div class="fieldset_table">
+        <fieldset>
+    		<legend><font color="black"><b>Informacije za izbor paketa</b></font></legend>
+                <table>
+        	<tr>
+            	<td>Zanima vas:</td>
+                <td><input type="checkbox" name="gender_select" value="rooms">Sobe
+                    <input type="checkbox" name="gender_select" value="apartments">Apartmani
+               </td>
+            </tr>
+            <tr>
+            	<td>Broj osoba koji prijavljujete</td>
+                <td><input type="number" name="number" min="1" max="6" required></td>
+            </tr>
+            <tr>
+            	<td>Paketi u ponudi:</td>
+                <td>
+                	<select name="text" required>
+                    	<option value="first_text">--odaberite--</option>
+  			<option value="text">Bazen</option>
+  			<option value="text">Bazen/Sauna</option>
+  			<option value="text">Bazen/Masaža</option>
+  			<option value="text">Bazen/Sauna/Masaža</option>
+                        <option value="text">Sauna/Masaža</option>
+                       
+			</select>
+                 </td>
+            </tr>
+            <tr>
+            	<td>Upišite dodatne sadržaje koje želite::</td>
+                <td><textarea rows="2" cols="50"> </textarea></td>
+            </tr>
+	</table>
+        </fieldset>
+        </div>
+        <input type="submit" name="submit_button" value="Potvrdi" style="color:purple">
+        <input type="reset" name="reset_button"value="Resetiraj" style="color:blue">
+    </form>
+</body>
+</html>
